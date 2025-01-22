@@ -45,7 +45,7 @@ deepspeed --include localhost:0,1,2,3 --master_port 29501 tinyllava/train/train.
     --tune_vision_tower_from_layer 0 \
     --tune_type_connector full \
     --output_dir $OUTPUT_DIR\
-    --num_train_epochs 1 \
+    --num_train_epochs 3 \
     --per_device_train_batch_size 32 \
     --per_device_eval_batch_size 4 \
     --gradient_accumulation_steps 2 \
